@@ -1,23 +1,15 @@
-import logo from './images/logo.svg';
-import './App.css';
+import { TodoRoom } from "./screens/todo_room"
+
+const bgStyle = {
+  background: "linear-gradient(-135deg, #FFCCFF 20%, #CC33FF, #6633FF)",
+  height: '100%',
+  backgroundAttachment: 'fixed'
+}
 
 export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={bgStyle}>
+      <TodoRoom />
     </div>
-  );
+  )
 }
